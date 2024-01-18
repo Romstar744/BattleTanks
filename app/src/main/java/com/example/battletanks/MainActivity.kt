@@ -22,6 +22,7 @@ import com.example.battletanks.databinding.ActivityMainBinding
 
 const val CELL_SIZE = 50
 
+
 lateinit var binding: ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
