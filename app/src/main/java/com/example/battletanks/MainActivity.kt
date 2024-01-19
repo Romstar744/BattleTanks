@@ -115,14 +115,14 @@ class MainActivity : AppCompatActivity() {
             LEFT -> {
                 binding.myTank.rotation = 270f
                 if (binding.myTank.marginLeft > 0) {
-                    (binding.myTank.layoutParams as FrameLayout.LayoutParams).topMargin -= CELL_SIZE
+                    (binding.myTank.layoutParams as FrameLayout.LayoutParams).leftMargin -= CELL_SIZE
                 }
             }
 
             RIGHT -> {
                 binding.myTank.rotation = 90f
                 if (binding.myTank.marginLeft + binding.myTank.width < binding.container.width / CELL_SIZE * CELL_SIZE) {
-                    (binding.myTank.layoutParams as FrameLayout.LayoutParams).topMargin += CELL_SIZE
+                    (binding.myTank.layoutParams as FrameLayout.LayoutParams).leftMargin += CELL_SIZE
                 }
             }
         }
